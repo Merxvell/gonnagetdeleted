@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+	<!-- 
+	This page is shown when the extension button is clicked, because the
+	"browser_action" field in manifest.json contains the  "default_popup"
+	key with value "popup.html".
+	-->
+<html>
+	<head>
+		<title> Getting started Extension's Popup</title>
+		<style type="text/css">
+		body{
+			margin: 10px;
+			white-space: nowrap;
+		}
+		h1 { 
+			font-size: 15px;
+		}
+		#container{
+			align-items: center;
+			display: flex;
+			justify-content: space-between;
+		}
+		</style>
+		<!--
+		Javascript and HTML must be in seperate files: see our Content Security
+		Policy documentation[1] for details and explaination.
+		[1]: https://developer.chrome.com/extensions.contentSecurityPolicy
+		-->
+		<script src="popup.js"></script>
+</head>
+<body>
+	<h1> YT Download Extensionr</h1>
+	<div id="container">
+		<span>The point is to be ableo to download audio video and both from any youtube video</span>
+	</div>
+</body>
+</html>
